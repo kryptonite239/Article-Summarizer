@@ -16,6 +16,7 @@ const Demo = () => {
   }, []);
   const [allArticles, setAllArticles] = useState([]);
   const [getSummary, { err, isFetching }] = useLazyGetSummaryQuery();
+  console.log({ err, isFetching });
   const handleSubmit = async (e) => {
     e.preventDefault();
     const { data } = await getSummary({ articleUrl: article.url });
@@ -97,7 +98,14 @@ const Demo = () => {
       "
       >
         {isFetching ? (
-          <img src={loader} alt="loader" className="w-20 h-20 object-contain" />
+          <div className="flex flex-col w-full h-full justify-center items-center font-satoshi">
+            <img
+              src={loader}
+              alt="loader"
+              className="w-20 h-20 object-contain"
+            />
+            <h1>Summary Is Loading Please Be Patient</h1>
+          </div>
         ) : err ? (
           <p className="font-inter font-bold text-black text-center">
             Error Occurred

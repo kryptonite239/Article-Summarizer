@@ -18,7 +18,7 @@ const Hero = () => {
         <span className="orange_gradient">OpenAI GPT-4</span>
       </h1>
       <h2 className="desc">
-        Introducing [], a cutting-edge tool powered by OpenAI's advanced
+        Introducing SummaAI a cutting-edge tool powered by OpenAI's advanced
         language model. With SummaAI, you can effortlessly condense lengthy
         articles into concise summaries. Harnessing the power of artificial
         intelligence, SummaAI delivers comprehensive and accurate summaries,
