@@ -7,7 +7,7 @@ const Hero = () => {
         <img src={logo} alt="logo" className="w-28 object-contain" />
         <button
           type="button"
-          onClick={() => window.open("")}
+          onClick={() => window.open("https://github.com/kryptonite239/Article-Summarizer/tree/main")}
           className="black_btn"
         >
           Github
