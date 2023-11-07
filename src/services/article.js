@@ -1,10 +1,9 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
-const apikey = import.meta.env.VITE_RAPID_API_ARTICLE_KEY;
-console.log(apikey)
+const apikey = "fbc6a953camsha0e8f2760e08195p10006cjsn40ee5710c732";
 export const articleApi = createApi({
   reducerPath: "articleApi",
   baseQuery: fetchBaseQuery({
-    baseUrl: "https://article-extractor-and-summarizer.p.rapidapi.com/",
+    baseUrl: "https://article-extractor-and-summarizer.p.rapidapi.com/summarize?url=https%3A%2F%2Ftime.com%2F6266679%2Fmusk-ai-open-letter%2F&length=3",
     prepareHeaders: (headers) => {
       headers.set(
         "X-RapidAPI-Key",
